@@ -19,9 +19,12 @@ class ProductDetailPage extends StatelessWidget {
             Card(
               child: Image.network(product.selectedProduct.value!.image),
             ),
-            Text(
-              product.selectedProduct.value!.title,
-              style: AppStyle.boldText(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                product.selectedProduct.value!.title,
+                style: AppStyle.boldText(),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
