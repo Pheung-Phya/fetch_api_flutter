@@ -22,7 +22,7 @@ class ProductPage extends StatelessWidget {
               return Card(
                 child: ListTile(
                   onTap: () {
-                    productController.selectedProduct(products);
+                    productController.setSelectProduct(products);
                     Get.to(ProductDetailPage());
                   },
                   leading: SizedBox(

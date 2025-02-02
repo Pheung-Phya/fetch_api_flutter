@@ -18,7 +18,7 @@ class ProductController extends GetxController {
     product.assignAll(productList);
   }
 
-  void SetselectProduct(Products products) {
+  void setSelectProduct(Products products) {
     selectedProduct.value = products;
   }
 }
